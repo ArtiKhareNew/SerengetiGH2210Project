@@ -8,7 +8,23 @@ packages:
   gitUsername: ArtiKhareNew
   gitBranch: main
 - name: AddPublicService
+  version: "6.0"
   gitServerName: src_shared_GitLabCtrl_Arti
   gitUrl: https://gitlab.com/ArtiKhareGitlab
   gitUsername: ArtiKhareGitlab
   gitBranch: master
+services:
+- serviceName: project.serengetigh2210.integrations:gitlabfs
+  packages:
+  - name: SerengetiGH2210Project
+    version: "1.0"
+  - name: AddPublicService
+    version: "6.0"
+- serviceName: AddPublicService:addpublicService
+  packages:
+  - name: AddPublicService
+    version: "6.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1303
